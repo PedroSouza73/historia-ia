@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai  # ou qualquer outra IA, como OpenAI
 
 # Configurar a chave da API (substitua pela sua se necessário)
-api_key = st.secrets("API_KEY")
+api_key = st.secrets["API_KEY"]
 genai.configure(api_key=api_key)
 
 # Função para gerar a história
